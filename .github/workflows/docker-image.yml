@@ -27,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: mjcc30/fedora-silvernobara:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/fedora-silvernobara:36 , ${{ secrets.DOCKERHUB_USERNAME }}/fedora-silvernobara:latest
